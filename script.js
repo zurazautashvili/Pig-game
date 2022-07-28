@@ -33,3 +33,29 @@ btnRoll.addEventListener("click", function () {
     }
   }
 });
+
+// To hold current points, which will be added to total points.
+
+btnHold.addEventListener("click", function () {
+  if (playing) {
+    // Add current score to active player's score
+    scores[activePlayer] += currentScore;
+    document.getElementById(`score--${activePlayer}`).textContent =
+      scores[activePlayer];
+
+    // Check if player's score is at least 100 points.
+    // Finish game
+    if (scores[activePlayer] >= 100) {
+      playing = false;
+      diceEl.classList.add("hidden");
+      document
+        .querySelector(`.player--${activePlayer}`)
+        .classList.add("player--winner");
+      document
+        .querySelector(`.player--${activePlayer}`)
+        .classList.remove("player--active");
+    } else {
+      switchPlayer();
+    }
+  }
+});
