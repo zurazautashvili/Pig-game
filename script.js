@@ -30,6 +30,8 @@ const init = function () {
   current1El.textContent = 0;
 };
 
+init();
+
 const switchPlayer = function () {
   document.getElementById(`current--${activePlayer}`).textContent = 0;
   currentScore = 0;
