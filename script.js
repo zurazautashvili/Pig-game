@@ -88,3 +88,7 @@ btnHold.addEventListener("click", function () {
 });
 
 btnNew.addEventListener("click", init);
+
+document.querySelector(".modal").addEventListener("click", function () {
+  document.querySelector(".rules").classList.remove("hidden");
+});
