@@ -89,10 +89,16 @@ btnHold.addEventListener("click", function () {
 
 btnNew.addEventListener("click", init);
 
-document.querySelector(".modal").addEventListener("click", function () {
-  document.querySelector(".rules").classList.toggle("hidden");
-});
+document
+  .querySelector(".modal--heading")
+  .addEventListener("click", function () {
+    document.querySelector(".rules").classList.remove("hidden");
+    document.querySelector(".modal--heading").classList.add("hidden");
+    document.querySelector(".modal--close").classList.remove("hidden");
+  });
 
-document.querySelector(".modal-close").addEventListener("click", function () {
+document.querySelector(".modal--close").addEventListener("click", function () {
   document.querySelector(".rules").classList.add("hidden");
+  document.querySelector(".modal--heading").classList.remove("hidden");
+  document.querySelector(".modal--close").classList.add("hidden");
 });

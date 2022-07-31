@@ -47,6 +47,13 @@ main {
 .modal:hover {
   color: white;
 }
+.modal--close {
+  position: relative;
+  bottom: 1rem;
+  left: 4rem;
+  font-size: 2rem;
+  display: inline-block;
+}
 .rules {
   position: absolute;
   top: 10rem;
@@ -60,16 +67,10 @@ main {
   padding: 1.5rem 1rem;
   color: black;
   overflow: auto;
+  border-radius: 9px;
 }
 .description {
   margin-bottom: 1rem;
-}
-.modal-close {
-  color: black;
-  font-size: 2rem;
-  position: relative;
-  left: 2.5rem;
-  bottom: 0.8rem;
 }
 
 .player {
