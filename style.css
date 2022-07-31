@@ -40,9 +40,12 @@ main {
   right: 0;
   width: 6rem;
   height: 2rem;
-  color: white;
+  color: rgb(215, 212, 212);
   font-size: 1.5rem;
   cursor: pointer;
+}
+.modal:hover {
+  color: white;
 }
 .rules {
   position: absolute;
