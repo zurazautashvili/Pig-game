@@ -95,10 +95,12 @@ document
     document.querySelector(".rules").classList.remove("hidden");
     document.querySelector(".modal--heading").classList.add("hidden");
     document.querySelector(".modal--close").classList.remove("hidden");
+    document.querySelector(".content").classList.add("overlay");
   });
 
 document.querySelector(".modal--close").addEventListener("click", function () {
   document.querySelector(".rules").classList.add("hidden");
   document.querySelector(".modal--heading").classList.remove("hidden");
   document.querySelector(".modal--close").classList.add("hidden");
+  document.querySelector(".content").classList.remove("overlay");
 });
